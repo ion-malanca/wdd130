@@ -1,15 +1,6 @@
 .callout {
-	
-}
-
-.callout img {
-	
-}
-
-blockquote {
-	
-}
-
-cite {
-	
+    max-width: 400px;
+    margin: auto;
+    
+	background-color: #247;
 }

@@ -1,0 +1,29 @@
+header {
+    background-color: #3a3a3a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 55px;
+}
+
+main {
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+img {
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.9);
+    margin-bottom: 45px;
+}
+
+section {
+    background-color: #dddddd;
+    padding: 20px 10px 20px 10px;
+    margin-bottom: 25px;
+    border-color: #3a3a3a;
+}
