@@ -1,10 +1,10 @@
 :root {
   --primary-color: #1e6091;
-  --secondary-color: #168aad;
+  --secondary-color: #157291;
   --accent1-color: #0b132b;
   --accent2-color: #eaeaea;
   --heading-font: Arial, Helvetica, sans-serif;
-  --body-font: "Segoe UI", Tahoma, sans-serif;
+  --body-font: "Times New Roman", "Georgia", serif;
 }
 
 * {
