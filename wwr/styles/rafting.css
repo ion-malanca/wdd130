@@ -18,9 +18,13 @@ body {
   color: var(--accent1-color);
 }
 
-header, main, footer {
+header, main {
   width: 840px;
   margin: 0 auto;
+}
+
+footer {
+  background-color: var(--accent2-color);
 }
 
 h1, h2 {
@@ -28,9 +32,17 @@ h1, h2 {
   color: var(--primary-color);
 }
 
-nav, p, section, article {
+nav, p, article {
   margin: 16px;
   padding: 8px;
+}
+
+section {
+  background-color: var(--accent2-color);
+}
+
+nav a {
+  color: var(--secondary-color);
 }
 
 .socialmedia a {
@@ -58,7 +70,6 @@ nav, p, section, article {
   color: #ffffff;
 }
 
-/* Hero article */
 .hero article {
   position: absolute;
   bottom: 20px;
