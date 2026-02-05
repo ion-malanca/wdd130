@@ -1,6 +1,6 @@
 :root {
   --primary-color: rgb(255, 255, 255);
-  --secondary-color: rgb(34, 139, 120);
+  --secondary-color: rgb(28, 110, 95);
   --accent1-color: rgb(20, 33, 61);
   --accent2-color: rgb(225, 235, 238);
   --heading-font: Arial, Helvetica, sans-serif;
@@ -31,6 +31,7 @@ header {
   padding: 1rem;
   background-color: var(--accent1-color);
   border-bottom: 3px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 header img {
