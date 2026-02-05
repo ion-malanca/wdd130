@@ -1,11 +1,12 @@
 :root {
-  --primary-color: white;
-  --secondary-color: #157291;
-  --accent1-color: #0b132b;
-  --accent2-color: rgb(128 128 128);
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(34, 139, 120);
+  --accent1-color: rgb(20, 33, 61);
+  --accent2-color: rgb(225, 235, 238);
   --heading-font: Arial, Helvetica, sans-serif;
-  --body-font: "Times New Roman", "Georgia", serif;
+  --body-font: "Times New Roman", Georgia, serif;
 }
+
 
 * {
   margin: 0;
@@ -18,7 +19,7 @@ body {
   color: var(--accent1-color);
 }
 
-header, main {
+header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
@@ -37,12 +38,13 @@ header img {
 }
 
 footer {
+  background-color: var(--secondary-color);
   color: var(--primary-color);
-  background: var(--secondary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  margin-top: 0.5rem;
 }
 
 h1, h2 {
@@ -62,13 +64,26 @@ nav {
   justify-content: flex-end;
 }
 
+figure {
+  background-color: rgb(240, 240, 240);
+  padding: 0.5rem;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: rgb(40, 40, 40);
+}
 
 section {
   background-color: var(--accent2-color);
+  margin-top: 0.5rem;
 }
 
 nav a {
   color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .socialmedia a {
@@ -103,21 +118,26 @@ nav a {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 
 .hero article {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  top: 50%;
+  left: 50%;
+  width: 420px;
+  margin-left: -210px;
+  margin-top: -60px;
   background-color: rgba(255, 255, 255, 0.85);
-  max-width: 400px;
+  padding: 1rem;
+  border-radius: 4px;
 }
 
 .hero article img {
   float: right;
   width: 125px;
   margin-left: 10px;
+  margin-top: 10px
 }
 
 .history h2 {
@@ -136,6 +156,7 @@ nav a {
 
 .history-grid img {
   max-width: 150px;
+  object-fit: cover;
 }
 
 .adventure-grid {
