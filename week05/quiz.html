@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTML and CSS Quiz">
+  <meta name="author" content="Ion Malanca">
+  <link rel="stylesheet" href="styles/quiz.css">
+  <title>HTML & CSS Quiz</title>
+</head>
+
+<body>
+  <main>
+    <h1>HTML & CSS Quiz</h1>
+    <form action="#" method="post">
+      <label for="q1">1. What does HTML stand for?</label>
+      <input type="text" id="q1" name="q1" required>
+      <label for="q2">2. Explain the difference between class and id in CSS.</label>
+      <textarea id="q2" name="q2" rows="4" required></textarea>
+      <label for="q3">3. Which CSS property is used to change text color?</label>
+      <select id="q3" name="q3" required>
+        <option value="" selected disabled>Choose One ...</option>
+        <option value="color">color</option>
+        <option value="background-color">background-color</option>
+        <option value="font-style">font-style</option>
+      </select>
+      <label for="q4">4. How many heading levels does HTML have?</label>
+      <input type="number" id="q4" name="q4" min="1" required>
+      <button type="submit">Submit Quiz</button>
+    </form>
+  </main>
+</body>
+</html>
