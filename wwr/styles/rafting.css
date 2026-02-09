@@ -5,6 +5,10 @@
   --accent2-color: rgb(225, 235, 238);
   --heading-font: Arial, Helvetica, sans-serif;
   --body-font: "Times New Roman", Georgia, serif;
+  --text-color: rgb(40, 40, 40);
+  --border-color: rgb(204, 204, 204);
+  --background-light: rgb(240, 240, 240);
+  --black-color: rgb(0, 0, 0);
 }
 
 
@@ -66,14 +70,14 @@ nav {
 }
 
 figure {
-  background-color: rgb(240, 240, 240);
+  background-color: var(--background-light);
   padding: 0.5rem;
 }
 
 figcaption {
   font-size: 0.9rem;
   margin-top: 0.5rem;
-  color: rgb(40, 40, 40);
+  color: var(--text-color);
 }
 
 section {
@@ -118,7 +122,7 @@ nav a {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: rgb(255, 255, 255);
+  color: var(--primary-color);
 }
 
 .hero article {
@@ -185,7 +189,7 @@ nav a {
 }
 
 .contact-details h1 {
-  color: rgb(0, 0, 0);
+  color: var(--black-color);
 }
 
 .contact-details p {
@@ -222,7 +226,7 @@ nav a {
   width: 100%;
   padding: 0.5rem;
   margin-top: 0;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   font-family: var(--body-font);
 }
 
@@ -269,7 +273,7 @@ nav a {
   padding-top: 0.5rem;
 }
 
-.contact-form label:has(input[type="checkbox"]) {
+.contact-form label[for="newsletter"] {
   grid-column: 1 / -1;
   text-align: center;
   margin-top: 0.5rem;
@@ -289,7 +293,7 @@ nav a {
   margin-top: 1rem;
   padding: 0.8rem 2rem;
   background-color: var(--secondary-color);
-  color: white;
+  color: var(--primary-color);
   border: none;
   font-weight: bold;
   cursor: pointer;
