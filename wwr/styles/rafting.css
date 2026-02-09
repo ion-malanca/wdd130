@@ -29,7 +29,7 @@ header {
   grid-template-columns: auto 1fr;
   align-items: center;
   padding: 1rem;
-  background-color: var(--accent1-color);
+  background-color: var(--secondary-color);
   border-bottom: 3px solid var(--primary-color);
   color: var(--primary-color);
 }
@@ -78,7 +78,6 @@ figcaption {
 
 section {
   background-color: var(--accent2-color);
-  margin-top: 0.5rem;
 }
 
 nav a {
@@ -177,4 +176,160 @@ nav a {
 .adventure-grid img {
   width: 100%;
   height: 100px;
+}
+
+.contact-details {
+  background-color: var(--accent2-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+.contact-details h1 {
+  color: rgb(0, 0, 0);
+}
+
+.contact-details p {
+  margin: 0.4rem 0;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--accent2-color);
+  padding: 1rem;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.contact-form label:not(.radio-group label) {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.contact-form input:not([type="radio"]):not([type="checkbox"]),
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0;
+  border: 1px solid #ccc;
+  font-family: var(--body-font);
+}
+
+.contact-form input {
+  margin-left: 0;
+}
+
+.purpose-title {
+  grid-column: 1 / -1;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.radio-group {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.radio-group input[type="radio"] {
+  margin: 0;
+}
+
+.contact-form textarea {
+  height: 120px;
+  margin-top: 0;
+  resize: vertical;
+}
+
+.contact-form label[for="message"] {
+  align-self: start;
+  padding-top: 0.5rem;
+}
+
+.contact-form label:has(input[type="checkbox"]) {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-form input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.contact-form button {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  justify-self: center;
+  font-family: var(--heading-font);
+}
+
+.employees {
+  background-color: var(--accent2-color);
+  padding: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.employees h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--accent1-color);
+}
+
+.employee-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.employees figure {
+  flex: 1;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.employees img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--secondary-color);
 }
